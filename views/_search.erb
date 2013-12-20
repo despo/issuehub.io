@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="large-8 columns">
+    <form action="/" method="get">
+      <div class="row">
+        <div class="large-3 columns">
+          <input type="text" placeholder="Labels (e.g. bug,refactoring)" name="label" id="label" value="<%=params["label"] %>"/>
+        </div>
+        <div class="large-3 columns">
+          <input type="text" name="language" placeholder="Language (e.g. ruby)" id="language" value="<%=params["language"] %>" /> 
+        </div>
+        <div class="large-6 columns">
+          <input type="text" name="repo" placeholder="Repositories (e.g. despo/kobol,andrew/24pullrequests)" id="language" value="<%=params["repo"]%>"/>
+        </div>
+        <input style="display: none;" type="submit" id="language" value="Search"></input>
+      </div>
+    </form>
+  </div>
+  <hr/>
+</div>

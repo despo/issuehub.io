@@ -1,0 +1,19 @@
+<div class="row">
+  <%= erb :_search %>
+</div>
+<div class="row">
+  <% if @issues.any? %>
+    <% slice = @issues.count >= 3 ? @issues.count/3 : 1 %>
+    <% @issues.each_slice(slice).each do |issues| %>
+      <div class="medium-4 columns issues">
+        <% issues.each do |issue| %>
+          <%= erb :_issue, locals: { issue: issue } %>
+        <% end %>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="large-12 medium-9 columns">
+      There are no issues matching your criteria
+    </div>
+  <% end %>
+</div>

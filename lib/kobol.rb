@@ -1,0 +1,5 @@
+require_relative 'kobol/app'
+require_relative 'kobol/requests/base'
+require_relative 'kobol/requests/issues'
+require_relative 'kobol/presenters/issue'
+require_relative 'kobol/presenters/label'

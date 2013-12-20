@@ -1,0 +1,25 @@
+<article>
+  <ul class='labels'>
+    <% issue.labels.each do |label| %>
+      <li>
+        <span class='label' style='background-color: <%= label.color %>;'>
+          <%= label.name %>
+        </span>
+      </li>
+    <% end %>
+  </ul>
+  <h4>
+    <a href="<%= issue.url %>"><%=  issue.title %></a>
+    <div class="subheader">
+      <small><a class="repo" href="http://github.com/<%= issue.repo %>"> <%= issue.repo %> </a></small>
+    </div>
+  </h4>
+  <% unless issue.body.nil? %>
+    <div class="body">
+      <%= issue.body %>
+    </div>
+  <% end %>
+  <% if issue.comments > 0 %>
+    <em><%=issue.comments%> Comments</em>
+  <% end %>
+</article>
