@@ -1,9 +1,9 @@
-module Kobol
+module Kobol::Presenters
   class Issue
 
     attr_reader :title, :comments, :url
 
-    def initialize attributes
+    def initialize(attributes)
       attributes.each { |property,value| instance_variable_set("@#{property}", value) }
     end
 

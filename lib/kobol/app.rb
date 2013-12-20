@@ -17,13 +17,12 @@ module Kobol
     end
 
     protected
-    def parameters hash={}, properties
+    def parameters(hash={}, properties)
       properties.each_pair do |key, values|
         hash[key] = []
         values.split(",").each { |value| hash[key] << value }
       end
       hash
     end
-
   end
 end
