@@ -2,7 +2,7 @@ module Kobol::Requests
   class Issues < Kobol::Requests::Base
 
     def search(properties)
-      issues = @client.search_issues("#{search_params(properties)} state:open")[:items]
+      issues = client.search_issues("#{search_params(properties)} state:open")[:items]
 
       parse(issues)
     rescue Exception => e
@@ -11,7 +11,7 @@ module Kobol::Requests
 
     private
     def parse(issues)
-      issues.map { |issue| parse_issue(issue) }
+      issues.map {|issue| parse_issue(issue) }
     end
 
     def parse_issue issue
@@ -23,7 +23,7 @@ module Kobol::Requests
     end
 
     def search_params(search_params)
-      search_params.map { |key,values| values.map { |value| "#{key}:#{value.strip}" } }.join(" ")
+      search_params.map {|key,values| values.map { |value| "#{key}:#{value.strip}" }}.join(" ")
     end
   end
 end

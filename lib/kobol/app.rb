@@ -20,7 +20,7 @@ module Kobol
     def parameters(hash={}, properties)
       properties.each_pair do |key, values|
         hash[key] = []
-        values.split(",").each { |value| hash[key] << value }
+        values.split(",").each {|value| hash[key] << value }
       end
       hash
     end
