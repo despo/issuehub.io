@@ -7,5 +7,7 @@
   <span><%= page %> of <%= total_pages %></span>
   <% if next_page %>
     <span class="next"><a href="<%= next_page %>">»</a></span>
+  <% else %>
+    <span class="arrow unavailable">»</a></span>
   <% end %>
 </div>

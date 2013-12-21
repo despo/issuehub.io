@@ -43,6 +43,10 @@ article {
   font-size: 1.4rem;
 }
 
+.details {
+  padding-top: 10px;
+}
+
 ul.labels {
   text-align: right;
   list-style-type: none;

@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
       while (selected.height() > $(this).height()+100) {
         article = selected.children('article').first().remove();
-        $(this).append(article);
+        $(this).prepend(article);
       };
     };
 

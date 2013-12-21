@@ -3,7 +3,7 @@ module Kobol::Requests
     PERMITTED = [ :language, :label, :repo ]
 
     def search(properties, page)
-      set_response(client.search_issues("#{search_params(properties)} state:open", page: page))
+      set_response(client.search_issues("#{search_params(properties)} state:open", sort: "updated", page: page))
     end
 
     def total
@@ -29,6 +29,7 @@ module Kobol::Requests
                                    labels: issue.labels,
                                    body: issue.body,
                                    comments: issue.comments,
+                                   updated_at: issue.updated_at,
                                    url: issue._rels[:html].href)
     end
 

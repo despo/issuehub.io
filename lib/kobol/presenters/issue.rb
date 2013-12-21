@@ -18,5 +18,9 @@ module Kobol::Presenters
     def labels
       @labels.map { |label| Label.new(name: label.name, color: label.color) }
     end
+
+    def updated_at
+      @updated_at.strftime("%d/%m/%Y %H:%M")
+    end
   end
 end

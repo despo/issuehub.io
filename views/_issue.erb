@@ -19,7 +19,14 @@
       <%= issue.body %>
     </div>
   <% end %>
-  <% if issue.comments > 0 %>
-    <em><%=issue.comments%> Comments</em>
-  <% end %>
+    <div class="details row">
+      <span class="small-6 columns text-left">
+        Updated <%=issue.updated_at%>
+      </span>
+      <% if issue.comments > 0 %>
+        <span class="small-6 columns text-right">
+          <%=issue.comments%> Comments
+        </span>
+      <% end %>
+    </div>
 </article>
