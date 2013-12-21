@@ -68,4 +68,9 @@ ul.labels li {
 
 code {
   color: #333333;
+  font-weight: normal;
+}
+
+.pagination {
+  font-size: 1.4em;
 }

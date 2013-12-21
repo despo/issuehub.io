@@ -1,5 +1,6 @@
 <div class="row">
   <%= erb :_search %>
+  <%= erb :_pagination %>
 </div>
 <div class="row">
   <% if @issues.any? %>
@@ -16,4 +17,7 @@
       There are no issues matching your criteria
     </div>
   <% end %>
+  <br/>
+  <div class="clearfix"></div>
+  <%= erb :_pagination %>
 </div>

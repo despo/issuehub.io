@@ -1,0 +1,11 @@
+<div class="pagination text-center">
+  <% if previous_page %>
+    <span><a href="<%= previous_page %>">«</a></span>
+  <% else %>
+    <span class="arrow unavailable">«</span>
+  <% end %>
+  <span><%= page %> of <%= total_pages %></span>
+  <% if next_page %>
+    <span class="next"><a href="<%= next_page %>">»</a></span>
+  <% end %>
+</div>
