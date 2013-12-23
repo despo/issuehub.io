@@ -15,5 +15,12 @@
       </div>
     </form>
   </div>
+  <div class="large-2 medium-2 columns right">
+    <% unless current_user %>
+      <a class="button small" href="/auth/github">Login with Github</a>
+    <% else %>
+    Logged in: <a href="http://github.com/<%= @nickname %>"><%= @nickname %> </a> / <a href="/logout">Logout</a>
+    <% end %>
+  </div>
 </div>
-  <hr/>
+<hr/>

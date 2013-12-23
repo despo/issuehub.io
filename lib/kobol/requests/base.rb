@@ -1,8 +1,13 @@
 module Kobol::Requests
   class Base
 
+    def initialize params=nil
+      params = { client_id: ENV['GITHUB_KEY'], client_secret: ENV['GITHUB_SECRET'] } if params.nil?
+      @client = Octokit::Client.new params
+    end
+
     def client
-      @client ||= Octokit::Client.new(:oauth_token => ENV['GITHUB_TOKEN'])
+      @client
     end
 
     def debug

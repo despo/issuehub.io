@@ -34,7 +34,9 @@ module Kobol::Requests
     end
 
     def search_params(search_params)
-      search_params.map {|key,values| values.map {|value| "#{key}:#{value.strip}" }}.join(" ").strip
+      response = search_params.map {|key,values| values.map {|value| "#{key}:#{value.strip}" }}.join(" ").strip
+      raise Exception, "You must choose a label, language or repo to get started." if response.empty?
+      response
     end
   end
 end

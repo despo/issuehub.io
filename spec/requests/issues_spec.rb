@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Kobol::Requests::Issues do
-  let(:issues) { Kobol::Requests::Issues.new }
+  let(:issues) { Kobol::Requests::Issues.new(:token) }
 
   before do
     Kobol::Requests::Issues.send(:public, :search_params)

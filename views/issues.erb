@@ -1,9 +1,9 @@
 <div class="row">
   <%= erb :_search %>
-  <%= erb :_pagination %>
 </div>
 <div class="row">
   <% if @issues.any? %>
+    <%= erb :_pagination %>
     <% slice = @issues.count >= 3 ? @issues.count/3 : 1 %>
     <% @issues.each_slice(slice).each do |issues| %>
       <div class="medium-4 columns issues">
@@ -12,12 +12,16 @@
         <% end %>
       </div>
     <% end %>
+    <br/>
+    <div class="clearfix"></div>
+    <%= erb :_pagination %>
   <% else %>
     <div class="large-12 medium-9 columns">
-      There are no issues matching your criteria
+      <% if @message %>
+        <%= @message %>
+      <% else %>
+        There are no issues matching your criteria
+      <% end %>
     </div>
   <% end %>
-  <br/>
-  <div class="clearfix"></div>
-  <%= erb :_pagination %>
 </div>
