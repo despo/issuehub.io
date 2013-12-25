@@ -60,8 +60,11 @@ ul.labels li {
   margin-right: 5px;
 }
 
-.label {
+#issues .label {
   bottom: 10px;
+}
+
+.label {
   box-shadow: 1px 1px 2px #e5e5e5;
   border-radius: 10px;
 }
