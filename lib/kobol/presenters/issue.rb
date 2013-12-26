@@ -8,7 +8,7 @@ module Kobol::Presenters
     end
 
     def body
-      @body ? Markdown.new(@body, :smart, :filter_html).to_html : nil
+      @body ? Markdown.new(@body, :filter_html).to_html : nil
     end
 
     def repo
