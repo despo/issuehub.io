@@ -7,7 +7,7 @@ module Kobol
       end
 
       def path
-        @path ||= "?label=#{params[:labels]}&language=#{params[:language]}&repo=#{params[:repo]}"
+        @path ||= "?label=#{params[:label]}&language=#{params[:language]}"
       end
 
       def next_page
