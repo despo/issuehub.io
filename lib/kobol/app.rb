@@ -35,6 +35,10 @@ module Kobol
       erb :issues
     end
 
+    get '/label-guide' do
+      erb :label_guide
+    end
+
     %w(get post).each do |method|
       send(method, "/auth/:provider/callback") do
         session[:token] = env['omniauth.auth']['credentials']['token']
