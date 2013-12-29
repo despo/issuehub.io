@@ -55,6 +55,8 @@ input[type="text"]:focus {
   padding-top: 10px;
   background-color: #f6f6f6;
   min-height: 800px;
+  box-shadow: 0 0px 2px #b2b2b2;
+  border-top: 1px solid #b2b2b2;
 }
 
 #issues .empty {
