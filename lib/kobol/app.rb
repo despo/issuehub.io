@@ -67,7 +67,7 @@ module Kobol
       @message =  "We have a very limited amount of requests available. Login with github to take advantage of authenticated request limit."
     rescue Exception => e
       @issues = []
-      @message =  "Something went wrong :(."
+      @message =  e.message
     end
 
     protected
