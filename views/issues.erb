@@ -1,7 +1,5 @@
+<%= erb :_search %>
 <div id="issues">
-  <div class="row">
-    <%= erb :_search %>
-  </div>
   <div class="row">
     <% if @issues.any? %>
       <%= erb :_pagination %>
@@ -17,12 +15,16 @@
       <div class="clearfix"></div>
       <%= erb :_pagination %>
     <% else %>
-      <div class="large-12 medium-9 columns">
-        <% if @message %>
-          <%= @message %>
-        <% else %>
-          There are no issues matching your criteria
-        <% end %>
+      <div class="large-12 medium-12 columns text-center">
+        <div class="empty">
+          <span class="message">
+            <% if @message %>
+              <%= @message %>
+            <% else %>
+              There are no issues matching your search.
+            <% end %>
+          </span>
+        </div>
       </div>
     <% end %>
   </div>

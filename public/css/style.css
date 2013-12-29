@@ -1,28 +1,82 @@
 html {
   padding: 0;
   overflow-x: hidden;
- }
+}
 
- body {
-   line-height: 1.6em;
-   padding: 10px;
-   margin: 0;
-   background-color: #fff;
-   font-family: helvetica, sans-serif;
-   font-size: 12px;
-   font-weight: 400;
- }
+body {
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
 
- body * {
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
- }
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  border-top: 5px solid #2795b6;
+  box-shadow: 2px 2px 2px #d8d2e5;
+  padding: 15px;
+  color: white;
+  background-color: #3b3b3b;
+}
+
+.brand {
+  display: inline;
+  font-size: 2em;
+  font-weight: 500;
+  text-shadow: rgb(255, 255, 255) 1px 1px 1px;
+}
+
+.brand a {
+  color: white;
+}
+
+#container {
+  padding-top: 30px;
+}
+
+input[type="text"] {
+  height: 2.2em;
+  font-size: 2.5em;
+}
+
+input[type="text"]:focus {
+  border-color: #2BA6CB;
+}
+
+#issues {
+  padding-top: 10px;
+  background-color: #f6f6f6;
+  min-height: 800px;
+}
+
+#issues .empty {
+  margin-top: 40px;
+}
+
+#issues .message {
+  color: #666666;
+  box-shadow: 2px 2px 2px #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 2em;
+  background-color: white;
+}
 
 article {
   margin: 10px 0;
   border-bottom: 1px solid #DDDDDD;
-  padding: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 2px #e9f6fa;
 }
 
 .body {
@@ -51,7 +105,7 @@ ul.labels {
   text-align: right;
   list-style-type: none;
   display: block;
-  padding: 0;
+  padding: 10px 0 0;
   margin-bottom: 5px;
 }
 
@@ -69,11 +123,25 @@ ul.labels li {
   border-radius: 10px;
 }
 
+#labelling .label {
+  margin-bottom: 0;
+}
+
 .row {
   max-width: 80rem;
+}
+
+.guide {
+  top: -15px;
+  position: relative;
 }
 
 code {
   color: #333333;
   font-weight: normal;
+}
+
+#labelling ul li {
+  list-style-type: none;
+  margin: 10px;
 }

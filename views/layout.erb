@@ -10,13 +10,18 @@
     <script type="text/javascript" src="<%= url("js/application.js") %>"></script>
   </head>
   <body>
+    <header>
     <div class="row">
-      <div class="large-10 medium-6 columns">
-        <h1>Kobol
-          <small class="subheader">GitHub issue finder</small>
-        </h1>
+      <div class="brand"><a href="/">issuehub.io</a></div>
+      <div class="right">
+        <% unless current_user %>
+          <a href="/auth/github">Login with Github</a>
+        <% else %>
+          Logged in: <a href="http://github.com/<%= @nickname %>"><%= @nickname %> </a> / <a href="/logout">Logout</a>
+        <% end %>
       </div>
     </div>
+    </header>
     <div id="container">
       <%= yield %>
     </div>
