@@ -10,7 +10,7 @@ require 'sinatra/base'
 module Kobol
   class App < Sinatra::Base
     use Rack::Session::Cookie, :key => 'rack.session',
-                               :domain => 'pacific-spire-2274.herokuapp.com',
+                               :domain => ENV['KOBOL_DOMAIN'],
                                :path => '/',
                                :expire_after => 2592000,
                                :secret => ENV['KOBOL_SECRET']
