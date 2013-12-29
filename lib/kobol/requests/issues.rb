@@ -34,8 +34,8 @@ module Kobol::Requests
     end
 
     def search_params(search_params)
-      raise Exception, "Enter a label to get started." if search_params[:label].empty?
-      response = search_params.map {|key,values| values.map {|value| "#{key}:#{value.strip}" }}.join(" ").strip
+      raise Exception, "Enter a label to get started" if search_params[:label].empty?
+      response = search_params.map {|key,values| values.map {|value| %{#{key}:"#{value.strip}"} }}.join(" ").strip
       response
     end
   end
