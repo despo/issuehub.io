@@ -62,9 +62,12 @@ module Kobol
 
       @total = issues_request.total
       @issues = issues_request.issues
+    rescue Octokit::TooManyRequests => e
+      @issues = []
+      @message =  "We have a very limited amount of requests available. Login with github to take advantage of authenticated request limit."
     rescue Exception => e
       @issues = []
-      @message =  e.message
+      @message =  "Something went wrong :(."
     end
 
     protected
