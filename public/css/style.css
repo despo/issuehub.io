@@ -54,7 +54,7 @@ input[type="text"]:focus {
 #issues {
   padding-top: 10px;
   background-color: #f6f6f6;
-  min-height: 800px;
+  min-height: 500px;
   box-shadow: 0 0px 2px #b2b2b2;
   border-top: 1px solid #b2b2b2;
 }
@@ -158,4 +158,10 @@ code {
 #labelling ul li {
   list-style-type: none;
   margin: 10px;
+}
+
+footer {
+  padding: 10px;
+  box-shadow: 0 0px 2px #b2b2b2;
+  border-top: 1px solid #b2b2b2;
 }
