@@ -18,6 +18,11 @@ The reason for making this project is to encourage issue labelling on open sourc
 gem install bundler
 bundle install
 ```
+###make sure the tests are passing
+
+```bash
+rake test
+```
 
 ###run the app!
 
