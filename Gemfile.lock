@@ -17,8 +17,8 @@ GEM
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
       rack (~> 1.2)
-    octokit (2.6.3)
-      sawyer (~> 0.5.1)
+    octokit (2.7.0)
+      sawyer (~> 0.5.2)
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
@@ -32,7 +32,7 @@ GEM
     rack-protection (1.5.1)
       rack
     rdiscount (2.1.7)
-    sawyer (0.5.1)
+    sawyer (0.5.2)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
     sinatra (1.4.4)
