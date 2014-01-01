@@ -2,6 +2,9 @@
 <html class="no-js" lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contribute to Open Source. Search issue labels to find the right project for you!">
+    <meta name="keywords" content="search github issues, contribute to open source, label issues" />
+
     <title>issuehub.io</title>
 
     <link type="text/css" rel="stylesheet" href="<%= url("css/github.css") %>" />
@@ -13,8 +16,11 @@
   <body>
     <header>
     <div class="row">
-      <div class="brand"><a href="/">issuehub.io</a></div>
-      <div class="right">
+      <div class="large-8 columns">
+        <div class="brand"><a href="/">issuehub.io</a></div>
+        <span>Contribute to Open Source. Search issue labels to find the right project for you!</span>
+      </div>
+      <div class="large-4 columns text-right">
         <% unless current_user %>
           <a href="/auth/github">Login with Github</a>
         <% else %>
