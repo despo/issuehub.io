@@ -83,7 +83,7 @@ article {
 
 .body {
   max-height: 150px;
-  overflow: scroll;
+  overflow: hidden;
   transition:  max-height 4s;
   -moz-transition: max-height 4s;
   -webkit-transition: max-height 4s;
