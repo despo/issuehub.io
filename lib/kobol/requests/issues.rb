@@ -3,7 +3,9 @@ module Kobol::Requests
     PERMITTED = [ :language, :label, :repo ]
 
     def search(properties, page)
-      set_response(client.search_issues("#{search_params(properties)} state:open", sort: "updated", page: page))
+      updated_after_date = Date.today << 3
+
+      set_response(client.search_issues("#{search_params(properties)} state:open updated:>#{updated_after_date}", page: page))
     end
 
     def total
