@@ -7,8 +7,12 @@ module Kobol::Presenters
       attributes.each { |property,value| instance_variable_set("@#{property}", value) }
     end
 
+    def title
+      @title ? Markdown.new(@title, :filter_html, :smart).to_html : nil
+    end
+
     def body
-      @body ? Markdown.new(@body, :smart).to_html : nil
+      @body ? Markdown.new(@body, :filter_html, :smart).to_html : nil
     end
 
     def repo
