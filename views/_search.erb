@@ -5,9 +5,11 @@
         <input type="text" placeholder="bug, documentation" name="label" id="label" value="<%=params["label"] %>"/>
         <a class="guide" href="/label-guide"> Label Guide </a>
       </div>
-      <div class="large-5 columns">
-        <input type="text" name="language" placeholder="ruby, javascript" id="language" value="<%=params["language"] %>" /> 
-        <input style="visibility: hidden;" type="submit" id="language" value="Search"></input>
+      <div class="large-3 columns">
+        <input type="text" name="language" placeholder="ruby, javascript" id="language" value="<%=params["language"] %>" />
+      </div>
+      <div class="large-2 columns">
+        <input class="button search large expand"type="submit" id="language" value="Find"></input>
       </div>
     </form>
   </div>

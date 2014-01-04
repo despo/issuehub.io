@@ -165,3 +165,10 @@ footer {
   box-shadow: 0 0px 2px #b2b2b2;
   border-top: 1px solid #b2b2b2;
 }
+
+.button.search {
+  color: white;
+  background-color: #2795b6;
+  font-size: 1.7em;
+  border: 2px outset #2795b6;
+}
