@@ -1,7 +1,3 @@
-require_relative 'helpers/pagination'
-require_relative 'helpers/authentication'
-require_relative 'helpers/form_helpers'
-
 require 'octokit'
 require 'omniauth'
 require 'omniauth-github'
