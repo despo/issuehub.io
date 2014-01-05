@@ -252,24 +252,24 @@ input[type="checkbox"]:checked + label {
 
 .label.translation {
   background-color: #34d081;
- }
+}
 
 .label.beginner {
   background-color: #b89055;
- }
+}
 
 .label.html {
   background-color: #f11abc;
- }
+}
 
- .description {
-   text-align: right;
-   font-weight: bold;
-   font-size: 1.5em;
-   padding-top: 10px;
-   padding-bottom: 10px;
- }
+.description {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
- .pagination {
-   padding: 5px 10px 5px;
- }
+.pagination {
+  padding: 5px 10px 5px;
+}

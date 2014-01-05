@@ -1,13 +1,20 @@
-<div class="pagination large-12 columns text-right">
-  <% if previous_page %>
-    <span><a href="<%= previous_page %>">« Previous</a></span>
-  <% else %>
-    <span class="arrow unavailable">« Previous</span>
+<div class="pagination">
+  <div class="large-6 columns text-left">
+    <% if @total %>
+      <strong><%= @total %></strong> issues
+    <% end %>
+  </div>
+  <div class="large-6 columns text-right">
+    <% if previous_page %>
+      <span><a href="<%= previous_page %>">« Previous</a></span>
+    <% else %>
+      <span class="arrow unavailable">« Previous</span>
+    <% end %>
+    <span> | </span>
+    <% if next_page %>
+      <span class="next"><a href="<%= next_page %>">Next »</a></span>
+    <% else %>
+      <span class="arrow unavailable">Next »</a></span>
   <% end %>
-  <span> | </span>
-  <% if next_page %>
-    <span class="next"><a href="<%= next_page %>">Next »</a></span>
-  <% else %>
-    <span class="arrow unavailable">Next »</a></span>
-  <% end %>
+</div>
 </div>
