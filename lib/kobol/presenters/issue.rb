@@ -8,7 +8,7 @@ module Kobol::Presenters
     end
 
     def title
-      @title ? Markdown.new(@title, :filter_html, :smart).to_html : nil
+      @title ? CGI::escapeHTML(@title) : nil
     end
 
     def body
