@@ -38,10 +38,6 @@ header {
   color: white;
 }
 
-#container {
-  padding-top: 30px;
-}
-
 input[type="text"] {
   height: 2.2em;
   font-size: 2.5em;
@@ -134,7 +130,7 @@ ul.labels li {
 
 .label {
   box-shadow: 1px 1px 2px #e5e5e5;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #labelling .label {
@@ -146,8 +142,23 @@ ul.labels li {
 }
 
 .guide {
-  top: -15px;
+  display: block;
+  box-shadow: 1px 1px 1px 1px #3b3b3b;
+  background-color: #b1272b;
+  background-color: white;
+  top: -10px;
   position: relative;
+  padding: 10px 10px 7px;
+}
+
+.guide a {
+  font-size: 1.3em;
+  padding: auto 5px;
+  display: inline-block;
+}
+
+.guide a:hover {
+  text-decoration: underline;
 }
 
 code {
@@ -172,3 +183,83 @@ footer {
   font-size: 1.7em;
   border: 2px outset #2795b6;
 }
+
+#search label.label {
+  border-radius: 5px;
+}
+
+input[type="checkbox"] + label {
+  font-size: 1.2em;
+  margin: 5px 0;
+  font-weight: 400;
+  -webkit-filter: grayscale(100%);
+  background-color: #e5e5e5;
+}
+
+input[type="checkbox"] {
+  border: none;
+  visibility: hidden;
+  margin-bottom: 0;
+  width: 0px;
+}
+
+input[type="checkbox"]:checked + label {
+  opacity: 1;
+  font-weight: 400;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: none;
+  color: lighten(50%);
+}
+
+.label.documentation {
+  background-color: #e395c9;
+}
+
+.label.bug {
+  background-color: #e70b41;
+}
+
+.label.trivial {
+  background-color: #25bdf1;
+}
+
+.label.feature {
+  background-color: #3c9d4a;
+}
+
+.label.enhancement {
+  background-color: #71a1d0;
+}
+
+.label.design {
+  background-color: #fbca04
+}
+
+.label.refactoring {
+  background-color: #a095c4;
+}
+
+.label.tests {
+  background-color: #d66038;
+}
+
+.label.translation {
+  background-color: #34d081;
+ }
+
+.label.beginner {
+  background-color: #b89055;
+ }
+
+.label.html {
+  background-color: #f11abc;
+ }
+
+ .description {
+   text-align: right;
+   font-weight: bold;
+   font-size: 1.5em;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }

@@ -1,13 +1,13 @@
-<div class="pagination large-12 columns">
+<div class="pagination large-12 columns text-right">
   <% if previous_page %>
-    <span><a href="<%= previous_page %>">«</a></span>
+    <span><a href="<%= previous_page %>">« Previous</a></span>
   <% else %>
-    <span class="arrow unavailable">«</span>
+    <span class="arrow unavailable">« Previous</span>
   <% end %>
-  <span><%= page %> of <%= total_pages %></span>
+  <span> | </span>
   <% if next_page %>
-    <span class="next"><a href="<%= next_page %>">»</a></span>
+    <span class="next"><a href="<%= next_page %>">Next »</a></span>
   <% else %>
-    <span class="arrow unavailable">»</a></span>
+    <span class="arrow unavailable">Next »</a></span>
   <% end %>
 </div>

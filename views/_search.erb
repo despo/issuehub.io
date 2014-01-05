@@ -1,14 +1,52 @@
 <div id="search" class="row">
-  <div class="large-10 large-centered columns">
+  <div class="large-12 large-centered columns">
     <form action="/" method="get">
-      <div class="large-7 columns">
-        <input type="text" placeholder="bug, documentation" name="label" id="label" value="<%=params["label"] %>"/>
-        <a class="guide" href="/label-guide"> Label Guide </a>
+      <div class="large-2 columns description">
+        pick label(s)
+      </div>
+      <div class="large-4 columns">
+        <input  type="checkbox"  name="label[]" id="bug" value="bug" <%= is_selected?("bug") %>/>
+        <label class="label bug" for="bug">bug </label>
+
+        <input type="checkbox"  name="label[]" id="documentation" value="documentation" <%= is_selected?("documentation") %>/>
+        <label class="label documentation" for="documentation">documentation</label>
+
+        <input type="checkbox"  name="label[]" id="trivial" value="trivial" <%= is_selected?("trivial") %>/>
+        <label class="label trivial" for="trivial">trivial</label>
+
+        <input type="checkbox"  name="label[]" id="feature" value="feature" <%= is_selected?("feature") %>/>
+        <label class="label feature" for="feature">feature</label>
+
+        <input type="checkbox"  name="label[]" id="tests" value="tests" <%= is_selected?("tests") %>/>
+        <label class="label tests" for="tests">tests</label>
+
+        <input type="checkbox"  name="label[]" id="enhancement" value="enhancement" <%= is_selected?("enhancement") %>/>
+        <label class="label enhancement" for="enhancement">enhancement</label>
+
+        <input type="checkbox"  name="label[]" id="design" value="design" <%= is_selected?("design") %>/>
+        <label class="label design" for="design">design</label>
+
+        <input type="checkbox"  name="label[]" id="refactoring" value="refactoring" <%= is_selected?("refactoring") %>/>
+        <label class="label refactoring" for="refactoring">refactoring</label>
+
+        <input type="checkbox"  name="label[]" id="translation" value="translation" <%= is_selected?("translation") %>/>
+        <label class="label translation" for="translation">translation</label>
+
+        <input type="checkbox"  name="label[]" id="beginner" value="beginner" <%= is_selected?("beginner") %>/>
+        <label class="label beginner" for="beginner">beginner</label>
+
+        <input type="checkbox"  name="label[]" id="html" value="html" <%= is_selected?("html") %>/>
+        <label class="label html" for="html">html</label>
+        <br/>
+        <a target="_blank" href="http://github.com/despo/kobol/issues/new?title=Label suggestion">Suggest a label!</a>
+      </div>
+      <div class="large-2 columns description">
+        and/or a language
       </div>
       <div class="large-3 columns">
         <input type="text" name="language" placeholder="ruby, javascript" id="language" value="<%=params["language"] %>" />
       </div>
-      <div class="large-2 columns">
+      <div class="large-1 columns">
         <input class="button search large expand"type="submit" id="language" value="Find"></input>
       </div>
     </form>

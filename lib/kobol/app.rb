@@ -1,5 +1,6 @@
 require_relative 'helpers/pagination'
 require_relative 'helpers/authentication'
+require_relative 'helpers/form_helpers'
 
 require 'octokit'
 require 'omniauth'
@@ -19,8 +20,9 @@ module Kobol
       provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
     end
 
-    helpers Kobol::Helpers::Pagination
     helpers Kobol::Helpers::Authentication
+    helpers Kobol::Helpers::Pagination
+    helpers Kobol::Helpers::FormHelpers
 
     enable :sessions
     set :session_secret, ENV["KOBOL_SECRET"]
@@ -80,8 +82,15 @@ module Kobol
     def parameters(hash={}, properties)
       Kobol::Requests::Issues::PERMITTED.each do |key|
         hash[key] = []
-        properties[key.to_s].split(",").each {|value| hash[key] << value } rescue ""
+        properties[key.to_s].each do |value|
+          hash[key] << value
+        end rescue ""
+
+        properties[key.to_s].split(",").each do |value|
+          hash[key] << value
+        end rescue ""
       end
+
       hash
     end
   end
