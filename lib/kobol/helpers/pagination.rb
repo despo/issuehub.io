@@ -7,15 +7,21 @@ module Kobol
       end
 
       def path
-        @path ||= "?label=#{params[:label]}&language=#{params[:language]}"
+        @path ||= request.fullpath
       end
 
       def next_page
-        total_pages > page ? "#{path}&page=#{page+1}" : nil
+        if total_pages > page
+          next_path = path.gsub(%Q{&page=#{page}}, %Q{&page=#{page+1}})
+          next_path ||= path + "&page=#{page+1}"
+        end
       end
 
       def previous_page
-        page > 1 ? "#{path}&page=#{page-1}" : nil
+        if page > 1
+          next_path = path.gsub(%Q{&page=#{page}}, %Q{&page=#{page-1}})
+          next_path ||= path + "&page=#{page-1}"
+        end
       end
 
       def total_pages
