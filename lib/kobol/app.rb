@@ -60,6 +60,9 @@ module Kobol
 
       @total = issues_request.total
       @issues = issues_request.issues
+    rescue Octokit::UnprocessableEntity => e
+      @issues = []
+      @message =  "Only the first 1000 results are available :("
     rescue Octokit::TooManyRequests => e
       @issues = []
       @message =  "Login with your github to use your requests rate limit."
