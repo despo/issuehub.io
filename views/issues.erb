@@ -12,7 +12,7 @@
       <%= erb :_pagination %>
       <% slice = @issues.count >= 3 ? @issues.count/3 : 1 %>
       <% @issues.each_slice(slice).each do |issues| %>
-        <div class="medium-4 columns issues">
+        <div class="medium-4 columns issue">
           <% issues.each do |issue| %>
             <%= erb :_issue, locals: { issue: issue } %>
           <% end %>
