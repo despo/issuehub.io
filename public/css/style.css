@@ -190,15 +190,18 @@ footer {
 
 input[type="checkbox"] + label {
   font-size: 1.2em;
-  margin: 5px 0;
+  margin: 2px 0;
   font-weight: 400;
   -webkit-filter: grayscale(100%);
   background-color: #e5e5e5;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+
 }
 
 input[type="checkbox"] {
   border: none;
   visibility: hidden;
+  display: none;
   margin-bottom: 0;
   width: 0px;
 }
@@ -209,7 +212,6 @@ input[type="checkbox"]:checked + label {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: none;
-  color: lighten(50%);
 }
 
 .label.documentation {
@@ -262,4 +264,8 @@ input[type="checkbox"]:checked + label {
    font-size: 1.5em;
    padding-top: 10px;
    padding-bottom: 10px;
+ }
+
+ .pagination {
+   padding: 5px 10px 5px;
  }
