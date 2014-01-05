@@ -11,17 +11,17 @@ module Kobol
       end
 
       def next_page
-        if total_pages > page
-          next_path = path.gsub(%Q{&page=#{page}}, %Q{&page=#{page+1}})
-          next_path ||= path + "&page=#{page+1}"
-        end
+        return unless total_pages > page
+
+        @next_path ||= path + "&page=#{page+1}" unless path.include?("page=")
+        @next_path ||= path.sub(%Q{&page=#{page}}, %Q{&page=#{page+1}})
       end
 
       def previous_page
-        if page > 1
-          next_path = path.gsub(%Q{&page=#{page}}, %Q{&page=#{page-1}})
-          next_path ||= path + "&page=#{page-1}"
-        end
+        return unless page > 1
+
+        @prev_path ||= path + "&page=#{page-1}" unless path.include?("page=")
+        @prev_path ||= path.sub(%Q{&page=#{page}}, %Q{&page=#{page-1}})
       end
 
       def total_pages

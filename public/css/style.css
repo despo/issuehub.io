@@ -19,6 +19,15 @@ body * {
   box-sizing: border-box;
 }
 
+input[type="text"] {
+  height: 2.2em;
+  font-size: 2.5em;
+}
+
+input[type="text"]:focus {
+  border-color: #2BA6CB;
+}
+
 header {
   border-top: 5px solid #2795b6;
   box-shadow: 2px 2px 2px #d8d2e5;
@@ -36,15 +45,6 @@ header {
 
 .brand a {
   color: white;
-}
-
-input[type="text"] {
-  height: 2.2em;
-  font-size: 2.5em;
-}
-
-input[type="text"]:focus {
-  border-color: #2BA6CB;
 }
 
 #issues {
@@ -66,6 +66,10 @@ input[type="text"]:focus {
   padding: 10px;
   font-size: 2em;
   background-color: white;
+}
+
+.issue h4 a {
+  overflow-wrap: break-word;
 }
 
 article {
