@@ -15,16 +15,16 @@
     <script type="text/javascript" src="<%= url("js/application.js") %>"></script>
   </head>
   <body>
-    <a href="https://github.com/despo/kobol" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <a class="fork-me" href="https://github.com/despo/kobol" target="_blank"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"> </a>
     <header>
     <div class="row">
-      <div class="large-8 columns">
+      <div class="large-6 columns">
         <div class="brand"><a href="/">issuehub.io</a></div>
-        <span>Contribute to Open Source. Search issue labels to find the right project for you!</span>
+        <span class="show-for-medium-up">Contribute to Open Source. Search issue labels to find the right project for you!</span>
       </div>
-      <div class="large-4 columns text-right">
+      <div class="large-6 columns sign-up">
         <% unless current_user %>
-          <a href="/auth/github">Login with Github</a>
+          <a href="/auth/github&scope=public_repo,repo">Login with Github</a>
         <% else %>
           Logged in: <a href="http://github.com/<%= @nickname %>"><%= @nickname %> </a> / <a href="/logout">Logout</a>
         <% end %>
