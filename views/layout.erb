@@ -26,7 +26,7 @@
         <% unless current_user %>
           <a href="/auth/github?scope=public_repo,repo">Login with Github</a>
         <% else %>
-          Logged in: <a href="http://github.com/<%= @nickname %>"><%= @nickname %> </a> / <a href="/logout">Logout</a>
+          Logged in: <a href="http://github.com/<%= nickname %>"><%= nickname %> </a> / <a href="/logout">Logout</a>
         <% end %>
       </div>
     </div>

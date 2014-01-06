@@ -6,6 +6,11 @@ require 'sinatra/base'
 
 module Kobol
   class App < Sinatra::Base
+    helpers Kobol::Helpers::Authentication
+    helpers Kobol::Helpers::Pagination
+    helpers Kobol::Helpers::Requests
+    helpers Kobol::Helpers::FormHelpers
+
     use Rack::Session::Cookie, :key => 'rack.session',
                                :domain => ENV['KOBOL_DOMAIN'],
                                :path => '/',
@@ -16,19 +21,14 @@ module Kobol
       provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
     end
 
-    helpers Kobol::Helpers::Authentication
-    helpers Kobol::Helpers::Pagination
-    helpers Kobol::Helpers::Requests
-    helpers Kobol::Helpers::FormHelpers
-
     enable :sessions
+
     set :session_secret, ENV["KOBOL_SECRET"]
 
     set :public_folder, APP_ROOT + '/public'
     set :views, APP_ROOT + "/views"
 
     get '/' do
-      @nickname = session[:nickname] if current_user
       retrieve_issues(page)
 
       erb :issues
