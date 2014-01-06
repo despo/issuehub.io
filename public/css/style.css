@@ -137,7 +137,11 @@ ul.labels li {
   border-radius: 5px;
 }
 
-#labelling .label {
+#label-guide {
+  margin-top: 20px;
+}
+
+#label-guide .label {
   margin-bottom: 0;
 }
 
@@ -170,9 +174,13 @@ code {
   font-weight: normal;
 }
 
-#labelling ul li {
+#label-guide ul {
+  margin-left: 0;
+}
+
+#label-guide ul li {
   list-style-type: none;
-  margin: 10px;
+  margin: 5px 0;
 }
 
 footer {
@@ -273,3 +281,32 @@ input[type="checkbox"]:checked + label {
 .pagination {
   padding: 5px 10px 5px;
 }
+
+.sign-up {
+  text-align: right;
+  float: right;
+}
+
+.fork-me img {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.labelling {
+  background-color: #3b3b3b;
+  padding-top: 30px;
+}
+
+.log-in-message {
+  padding-bottom: 10px;
+  color: white;
+}
+
+.labelling .message {
+  padding-top: 15px;
+  color: white;
+}
+

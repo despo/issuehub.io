@@ -1,4 +1,4 @@
-<div id="labelling">
+<div id="label-guide">
   <div class="row">
     <div class="large-12 medium-12 columns">
       <h2>Label Guide</h2>
@@ -46,6 +46,35 @@
       <p>
       Besides issue type labels, you can also user complimentary labels like <span class="label beginner">beginner</span> to describe the level of domain knowledge required  or specific technologies like <span class="label html">html</span> who is not classed as a github language.
       </p>
+    </div>
+  </div>
+  <div  class="labelling">
+    <div  class="row">
+      <div class="large-5 columns">
+        <form action="/labels" method="post" >
+          <div class="row">
+            <% if current_user %>
+              <div class="large-8 columns">
+                <input name="project" type="text" placeholder="despo/issuehub.io">
+              </div>
+              <div class="large-4 columns">
+                <a href="" type="submit" class="button large expand">Create labels</a>
+              </div>
+            <% else %>
+              <div class="large-12 columns">
+                <h4 class="log-in-message">
+                  <a href="/auth/github&scope=public_repo,repo">Login</a> to add the labels to your projects!
+                </h4>
+              </div>
+            <% end %>
+          </div>
+        </form>
+      </div>
+      <% if @message %>
+        <div class="large-6 columns">
+          <h3 class="message"><%= @message %></h3>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

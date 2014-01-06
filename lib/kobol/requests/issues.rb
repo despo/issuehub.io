@@ -18,14 +18,6 @@ module Kobol::Requests
 
     private
 
-    def set_response response
-      @response = response
-    end
-
-    def response
-      @response
-    end
-
     def parse_issue issue
       Kobol::Presenters::Issue.new(title: issue.title,
                                    labels: issue.labels,

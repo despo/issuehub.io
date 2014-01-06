@@ -18,6 +18,7 @@ module Kobol
 
     helpers Kobol::Helpers::Authentication
     helpers Kobol::Helpers::Pagination
+    helpers Kobol::Helpers::Requests
     helpers Kobol::Helpers::FormHelpers
 
     enable :sessions
@@ -34,6 +35,13 @@ module Kobol
     end
 
     get '/label-guide' do
+      erb :label_guide
+    end
+
+    post '/labels' do
+      repository = params[:project]
+      create_or_update_labels(repository)
+
       erb :label_guide
     end
 
@@ -56,26 +64,24 @@ module Kobol
     end
 
     def retrieve_issues page=1
-      issues_request.search(parameters(params), page)
+      @issues = []
+      github { issues_request.search(parameters(params), page) }
 
-      @total = issues_request.total
-      @issues = issues_request.issues
-    rescue Octokit::UnprocessableEntity => e
-      @issues = []
-      @message =  "Only the first 1000 results are available :("
-    rescue Octokit::TooManyRequests => e
-      @issues = []
-      @message =  "Login with your github to use your requests rate limit."
-    rescue Exception => e
-      @issues = []
-      @message =  e.message
+      @total = issues_request.total rescue nil
+      @issues = issues_request.issues rescue []
     end
 
     protected
 
     def issues_request
-      login_params = current_user ? { login: session[:nickname], access_token: session[:token] } : nil
       @issues_request ||= Kobol::Requests::Issues.new(login_params)
+    end
+
+    def create_or_update_labels(repository)
+      message = "Labels have been created for <a href='http://github.com/#{repository}/issues'>#{repository}</a>!"
+
+      labels = Kobol::Requests::Labels.new(login_params, repository)
+      github(message, "#{repository} not found!") { labels.create_or_update_labels(LABELS) }
     end
 
     def parameters(hash={}, properties)
@@ -89,7 +95,6 @@ module Kobol
           hash[key] << value
         end rescue ""
       end
-
       hash
     end
   end

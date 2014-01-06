@@ -18,5 +18,15 @@ module Kobol::Requests
       end
       Octokit.middleware = stack
     end
+
+    private
+
+    def set_response response
+      @response = response
+    end
+
+    def response
+      @response
+    end
   end
 end
