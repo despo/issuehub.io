@@ -1,19 +1,13 @@
-@media only screen and (max-width: 80em) {
-  .fork-me img {
-    display: none;
-  }
- }
-
- @media only screen and (max-width: 64em) {
+@media only screen and (max-width: 64em) {
    .description {
      text-align: left;
- }
+  }
 
- .show-for-medium-up {
-   display: none;
- }
+  .show-for-medium-up {
+    display: none;
+  }
 
- .sign-up {
-   text-align: left;
- }
- }
+  .sign-up {
+    text-align: left;
+  }
+}
