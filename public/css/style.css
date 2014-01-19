@@ -8,7 +8,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-  font-family: helvetica, sans-serif;
+  font-family: "Open Sans", helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -463,3 +463,6 @@ input[type="checkbox"]:checked + label {
     display: block;
   }
 }
+
+/****** temp overrides of font-family in foundation.css ******/
+.label, .button{font-family:"Open Sans", "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
