@@ -24,7 +24,6 @@ module Kobol
     enable :sessions
 
     set :session_secret, ENV["KOBOL_SECRET"]
-
     set :public_folder, APP_ROOT + '/public'
     set :views, APP_ROOT + "/views"
 
@@ -63,7 +62,7 @@ module Kobol
       redirect "/"
     end
 
-    def retrieve_issues page=1
+    def retrieve_issues(page=1)
       @issues = []
       github { issues_request.search(parameters(params), page) }
 

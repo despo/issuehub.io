@@ -1,4 +1,4 @@
-require_relative '../test_helper'
+require_relative '../spec_helper'
 
 describe Kobol::Requests::Issues do
   let(:issues) { Kobol::Requests::Issues.new }
@@ -11,6 +11,6 @@ describe Kobol::Requests::Issues do
     properties = { label: ["bug", "refactoring"], language: ["ruby"] }
     processed_properties = %{label:"bug" label:"refactoring" language:"ruby"}
 
-    issues.search_params(properties).must_equal(processed_properties)
+    expect(issues.search_params(properties)).to eq(processed_properties)
   end
 end
