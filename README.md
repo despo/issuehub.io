@@ -21,10 +21,16 @@ The reason for making this project is to encourage issue labelling on open sourc
 gem install bundler
 bundle install
 ```
+
+### Set up the .env file
+```bash
+cp .env.example .env
+```
+
 ###Make sure the tests are passing
 
 ```bash
-rake test
+rake spec
 ```
 
 ###Run the app!
