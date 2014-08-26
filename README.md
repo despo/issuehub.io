@@ -1,7 +1,7 @@
 # issuehub.io
 
-[![Build Status](https://travis-ci.org/despo/kobol.png)](https://travis-ci.org/despo/kobol)
-[![Dependency Status](https://gemnasium.com/despo/kobol.png)](https://gemnasium.com/despo/kobol)
+[![Build Status](https://travis-ci.org/despo/kobol.png)](https://travis-ci.org/despo/issuehub.io)
+[![Dependency Status](https://gemnasium.com/despo/kobol.png)](https://gemnasium.com/despo/issuehub.io)
 
 [**issuehub.io**](http://issuehub.io) is a small project that enables you to find GitHub issues to work on. Unlike other contributing projects, the focus is on labelled issues rather than projects.
 
@@ -45,8 +45,8 @@ Find something to work on. You can pick one of the open issues, if there are any
 
 If there is something else that you would like to work on or other ways to improve **issuehub**, open an issue first so we can discuss it.
 
-Also, have a look at the [contribution guidelines](https://github.com/despo/kobol/blob/master/CONTRIBUTING.md).
+Also, have a look at the [contribution guidelines](https://github.com/despo/issuehub.io/blob/master/CONTRIBUTING.md).
 
 ## Copyright
 
-Copyright (c) 2013 Despo Pentara. See [LICENSE](https://github.com/despo/kobol/blob/master/LICENSE) for details.
+Copyright (c) 2014 Despo Pentara. See [LICENSE](https://github.com/despo/kobol/blob/master/LICENSE) for details.
