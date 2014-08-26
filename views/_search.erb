@@ -5,6 +5,9 @@
         pick label(s)
       </div>
       <div class="large-5 columns">
+        <input type="checkbox"  name="label[]" id="help-wanted" value="help-wanted" <%= is_selected?("help-wanted") %>/>
+        <label class="label help-wanted" for="help-wanted">help-wanted </label>
+
         <input type="checkbox"  name="label[]" id="bug" value="bug" <%= is_selected?("bug") %>/>
         <label class="label bug" for="bug">bug </label>
 

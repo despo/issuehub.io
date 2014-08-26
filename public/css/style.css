@@ -226,6 +226,10 @@ input[type="checkbox"]:checked + label {
   filter: none;
 }
 
+.label.help-wanted {
+  background-color: #159818;
+}
+
 .label.documentation {
   background-color: #e395c9;
 }
