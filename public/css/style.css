@@ -226,7 +226,7 @@ input[type="checkbox"]:checked + label {
   filter: none;
 }
 
-.label.help-wanted {
+.label.help-wanted, .label.help-wanted-2 {
   background-color: #159818;
 }
 
