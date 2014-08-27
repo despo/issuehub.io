@@ -1,6 +1,6 @@
 # issuehub.io
 
-[![Build Status](https://travis-ci.org/despo/kobol.png)](https://travis-ci.org/despo/issuehub.io)
+[![Build Status](https://travis-ci.org/despo/issuehub.io.svg?branch=master)](https://travis-ci.org/despo/issuehub.io)
 [![Dependency Status](https://gemnasium.com/despo/kobol.png)](https://gemnasium.com/despo/issuehub.io)
 
 [**issuehub.io**](http://issuehub.io) is a small project that enables you to find GitHub issues to work on. Unlike other contributing projects, the focus is on labelled issues rather than projects.
