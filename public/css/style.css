@@ -69,6 +69,8 @@ header {
 }
 
 .issue h4 a {
+  color: #2764B6;
+  font-weight: bold;
   overflow-wrap: break-word;
 }
 
