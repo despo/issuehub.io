@@ -19,6 +19,10 @@ body * {
   box-sizing: border-box;
 }
 
+a {
+  color: #2764B6;
+}
+
 input[type="text"] {
   height: 2.2em;
   font-size: 2.5em;
@@ -69,7 +73,6 @@ header {
 }
 
 .issue h4 a {
-  color: #2764B6;
   font-weight: bold;
   overflow-wrap: break-word;
 }
