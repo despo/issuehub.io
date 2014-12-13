@@ -72,7 +72,7 @@ header {
   background-color: white;
 }
 
-.issue h4 a {
+.issue h4 a,.issue h5 {
   font-weight: bold;
   overflow-wrap: break-word;
 }
