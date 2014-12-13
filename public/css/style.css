@@ -23,6 +23,10 @@ a {
   color: #2764B6;
 }
 
+header .sign-up a {
+  color: #2ba6cb;
+}
+
 input[type="text"] {
   height: 2.2em;
   font-size: 2.5em;
