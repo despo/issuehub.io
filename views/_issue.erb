@@ -10,10 +10,10 @@
   </ul>
   <h4>
     <a href="<%= issue.url %>" target="_blank"><%=  issue.title %></a>
-    <div class="subheader">
-      <small><a class="repo" href="http://github.com/<%= issue.repo %>"> <%= issue.repo %> </a></small>
-    </div>
   </h4>
+  <h5 class="subheader">
+    <a class="repo" href="http://github.com/<%= issue.repo %>"> <%= issue.repo %> </a>
+  </h5>
   <% unless issue.body.nil? %>
     <div class="body">
       <%= issue.body %>

@@ -19,6 +19,14 @@ body * {
   box-sizing: border-box;
 }
 
+a {
+  color: #2764B6;
+}
+
+header .sign-up a {
+  color: #2ba6cb;
+}
+
 input[type="text"] {
   height: 2.2em;
   font-size: 2.5em;
@@ -68,7 +76,8 @@ header {
   background-color: white;
 }
 
-.issue h4 a {
+.issue h4 a,.issue h5 {
+  font-weight: bold;
   overflow-wrap: break-word;
 }
 
@@ -278,8 +287,16 @@ input[type="checkbox"]:checked + label {
   text-align: right;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.description.labels {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.description.languages {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .pagination {
