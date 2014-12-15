@@ -4,7 +4,7 @@
       <div class="large-1 columns description labels">
         pick label(s)
       </div>
-      <div class="large-5 columns">
+      <div class="large-5 columns checkboxes">
         <input type="checkbox"  name="label[]" id="help-wanted" value="help wanted" <%= is_selected?("help wanted") %>/>
         <label class="label help-wanted" for="help-wanted">help wanted </label>
 
@@ -23,6 +23,9 @@
         <input type="checkbox"  name="label[]" id="tests" value="tests" <%= is_selected?("tests") %>/>
         <label class="label tests" for="tests">tests</label>
 
+        <input type="checkbox"  name="label[]" id="html" value="html" <%= is_selected?("html") %>/>
+        <label class="label html" for="html">html</label>
+        <br/>
         <input type="checkbox"  name="label[]" id="enhancement" value="enhancement" <%= is_selected?("enhancement") %>/>
         <label class="label enhancement" for="enhancement">enhancement</label>
 
@@ -38,8 +41,8 @@
         <input type="checkbox"  name="label[]" id="beginner" value="beginner" <%= is_selected?("beginner") %>/>
         <label class="label beginner" for="beginner">beginner</label>
 
-        <input type="checkbox"  name="label[]" id="html" value="html" <%= is_selected?("html") %>/>
-        <label class="label html" for="html">html</label>
+        <input type="checkbox"  name="label[]" id="accessibility" value="accessibility" <%= is_selected?("accessibility") %>/>
+        <label class="label accessibility" for="accessibility">accessibility</label>
         <br/>
         <a target="_blank" href="http://github.com/despo/kobol/issues/new?title=Label suggestion">Suggest a label!</a>
       </div>
