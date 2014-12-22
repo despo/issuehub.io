@@ -82,7 +82,6 @@ p, blockquote, ul, ol, dl, li, table, pre {
   margin: 15px 0; }
 
 hr {
-  background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
   border: 0 none;
   color: #cccccc;
   height: 4px;
@@ -275,5 +274,3 @@ pre {
   pre code, pre tt {
     background-color: transparent;
     border: none; }
-
-
