@@ -6,13 +6,14 @@ module Kobol::Helpers
                 trivial: '25bdf1',
                 feature: '3c9d4a',
                 enhancement: '71a1d0',
-                design: 'fbca04' ,
+                design: '25bdf1' ,
                 refactoring: 'a095c4' ,
                 tests: 'd66038' ,
                 translation: '34d081' ,
                 beginner: 'b89055' ,
                 html: 'f11abc' ,
-                question: 'cc317c'}
+                question: 'cc317c',
+                accessibility: '3c9d4a'}
 
     def github(message=nil, not_found_message=nil)
       yield

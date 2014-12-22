@@ -205,6 +205,12 @@ footer {
   border: 2px outset #2795b6;
 }
 
+
+.checkboxes {
+  text-overflow: visible;
+  white-space: nowrap;
+}
+
 #search label.label {
   border-radius: 5px;
 }
@@ -260,7 +266,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .label.design {
-  background-color: #fbca04
+  background-color: #25bdf1
 }
 
 .label.refactoring {
@@ -271,6 +277,10 @@ input[type="checkbox"]:checked + label {
   background-color: #d66038;
 }
 
+.label.html {
+  background-color: #f11abc;
+}
+
 .label.translation {
   background-color: #34d081;
 }
@@ -279,8 +289,8 @@ input[type="checkbox"]:checked + label {
   background-color: #b89055;
 }
 
-.label.html {
-  background-color: #f11abc;
+.label.accessibility {
+  background-color: #3c9d4a;
 }
 
 .description {
