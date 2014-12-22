@@ -2,9 +2,11 @@
   <ul class='labels'>
     <% issue.labels.each do |label| %>
       <li>
-        <span class='label' style='background-color: <%= label.color %>;'>
+        <a href="/?label[]=<%= CGI.escape label.name %>">
+          <span class='label' style='background-color: <%= label.color %>;'>
           <%= label.name %>
-        </span>
+          </span>
+        </a>
       </li>
     <% end %>
   </ul>
