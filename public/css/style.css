@@ -299,12 +299,7 @@ input[type="checkbox"]:checked + label {
   font-size: 1.5em;
 }
 
-.description.labels {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.description.languages {
+.description.languages, .description.labels {
   padding-top: 25px;
   padding-bottom: 25px;
 }
