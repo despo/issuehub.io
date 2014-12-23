@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-ruby "2.1.1"
+ruby "2.1.5"
 
 gem 'rake'
 gem 'dotenv'

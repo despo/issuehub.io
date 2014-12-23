@@ -12,7 +12,7 @@ The reason for making this project is to encourage issue labelling on open sourc
 ###Install ruby
 
  ```bash
- rvm install 2.1.1
+ rvm install 2.1.5
  ```
 
 ###Install the gems using the **Gemfile**
