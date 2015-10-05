@@ -30,7 +30,7 @@ cp .env.example .env
 ###Make sure the tests are passing
 
 ```bash
-rake spec
+bundle exec rake spec
 ```
 
 ###Run the app!
