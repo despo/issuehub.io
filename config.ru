@@ -1,7 +1,7 @@
 APP_ROOT = File.dirname(__FILE__)
-require './lib/kobol'
-
 require 'dotenv'
 Dotenv.load
+
+require './lib/kobol'
 
 run Kobol::App
