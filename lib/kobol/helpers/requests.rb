@@ -13,7 +13,8 @@ module Kobol::Helpers
                 beginner: 'b89055' ,
                 html: 'f11abc' ,
                 question: 'cc317c',
-                accessibility: '3c9d4a'}
+                accessibility: '3c9d4a',
+                'easy pick' => 'fbca04' }
 
     def github(message=nil, not_found_message=nil)
       yield
