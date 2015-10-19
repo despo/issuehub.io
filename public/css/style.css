@@ -292,6 +292,10 @@ input[type="checkbox"]:checked + label {
   background-color: #3c9d4a;
 }
 
+.label.easy-pick {
+  background-color: #fbca04;
+}
+
 .description {
   text-align: right;
   font-weight: bold;
