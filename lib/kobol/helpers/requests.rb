@@ -1,20 +1,20 @@
 module Kobol::Helpers
   module Requests
-    LABELS = {  'help wanted' => '159818',
-                documentation: 'e395c9' ,
+    LABELS = {  'help wanted' => '128014',
+                documentation: '996588' ,
                 bug: 'e70b41',
-                trivial: '25bdf1',
-                feature: '3c9d4a',
-                enhancement: '71a1d0',
-                design: '25bdf1' ,
-                refactoring: 'a095c4' ,
-                tests: 'd66038' ,
-                translation: '34d081' ,
-                beginner: 'b89055' ,
-                html: 'f11abc' ,
+                trivial: '136480',
+                feature: '35563a',
+                enhancement: '537699',
+                design: '1f5466' ,
+                refactoring: '686180' ,
+                tests: 'b34f2e' ,
+                translation: '208050' ,
+                beginner: '66410a' ,
+                html: 'd918a9' ,
                 question: 'cc317c',
-                accessibility: '3c9d4a',
-                'easy pick' => 'fbca04' }
+                accessibility: '30803c',
+                'easy pick' => 'b3560b' }
 
     def github(message=nil, not_found_message=nil)
       yield
