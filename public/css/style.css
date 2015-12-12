@@ -205,12 +205,6 @@ footer {
   border: 2px outset #2795b6;
 }
 
-
-.checkboxes {
-  text-overflow: visible;
-  white-space: nowrap;
-}
-
 #search label.label {
   border-radius: 5px;
 }
