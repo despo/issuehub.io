@@ -217,11 +217,11 @@ footer {
 
 input[type="checkbox"] + label {
   font-size: 1.2em;
-  margin: 2px 0;
+  margin: 2px 1px;
   font-weight: 400;
-  -moz-box-shadow: inset 0 50px 0 #b0b0b0;
-  -webkit-box-shadow: inset 0 50px 0 #b0b0b0;
-  box-shadow: inset 0 50px 0 #b0b0b0;
+  -moz-box-shadow: inset 0 50px 0 #5e5e5e; 
+ -webkit-box-shadow: inset 0 50px 0 #5e5e5e;
+    box-shadow: inset 0 50px 0 #5e5e5e;
 }
 
 input[type="checkbox"] {
@@ -235,17 +235,17 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label {
   opacity: 1;
   font-weight: 400;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
 }
 
 .label.help-wanted {
-  background-color: #159818;
+  background-color: #128014;
 }
 
 .label.documentation {
-  background-color: #e395c9;
+  background-color: #996588;
 }
 
 .label.bug {
@@ -253,47 +253,47 @@ input[type="checkbox"]:checked + label {
 }
 
 .label.trivial {
-  background-color: #25bdf1;
+  background-color: #136480;
 }
 
 .label.feature {
-  background-color: #3c9d4a;
+  background-color: #35563a;
 }
 
 .label.enhancement {
-  background-color: #71a1d0;
+  background-color: #537699;
 }
 
 .label.design {
-  background-color: #25bdf1
+  background-color: #1f5466;
 }
 
 .label.refactoring {
-  background-color: #a095c4;
+  background-color: #686180;
 }
 
 .label.tests {
-  background-color: #d66038;
+  background-color: #b34f2e;
 }
 
 .label.html {
-  background-color: #f11abc;
+  background-color: #d918a9;
 }
 
 .label.translation {
-  background-color: #34d081;
+  background-color: #208050;
 }
 
 .label.beginner {
-  background-color: #b89055;
+  background-color: #66410a;
 }
 
 .label.accessibility {
-  background-color: #3c9d4a;
+  background-color: #30803c;
 }
 
 .label.easy-pick {
-  background-color: #fbca04;
+  background-color: #b3560b;
 }
 
 .description {
