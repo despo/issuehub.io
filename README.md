@@ -49,4 +49,4 @@ Also, have a look at the [contribution guidelines](https://github.com/despo/issu
 
 ## Copyright
 
-Copyright (c) 2015 Despo Pentara. See [LICENSE](https://github.com/despo/kobol/blob/master/LICENSE) for details.
+Copyright (c) 2016 Despo Pentara. See [LICENSE](https://github.com/despo/kobol/blob/master/LICENSE) for details.
