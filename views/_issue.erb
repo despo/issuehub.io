@@ -19,6 +19,7 @@
   <% unless issue.body.nil? %>
     <div class="body">
       <%= issue.body %>
+      <%= Octokit.repo(issue.repo)[:language] %>
     </div>
   <% end %>
     <div class="details row">
