@@ -53,7 +53,7 @@
         language
       </div>
       <div class="large-3 columns">
-        <input type="text" name="language" placeholder="ruby, javascript, ..." id="language" value="<%=params["language"] %>" />
+        <input type="text" name="language" placeholder="ruby, javascript, ..." id="language" value="<%=sanitize(params["language"]) %>" />
       </div>
       <div class="large-1 columns">
         <input class="button search large expand"type="submit" id="language" value="Find"></input>
