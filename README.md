@@ -9,13 +9,13 @@ The reason for making this project is to encourage issue labelling on open sourc
 
 ## Getting started
 
-###Install ruby
+### Install ruby
 
  ```bash
  rvm install 2.1.5
  ```
 
-###Install the gems using the **Gemfile**
+### Install the gems using the **Gemfile**
 
 ```bash
 gem install bundler
@@ -27,13 +27,13 @@ bundle install
 cp .env.example .env
 ```
 
-###Make sure the tests are passing
+### Make sure the tests are passing
 
 ```bash
 bundle exec rake spec
 ```
 
-###Run the app!
+### Run the app!
 
 ```bash
 bundle exec rackup
