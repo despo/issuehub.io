@@ -15,12 +15,20 @@ The reason for making this project is to encourage issue labelling on open sourc
  rvm install 2.1.5
  ```
 
+| Install          | Link  |
+| ------------- | :-----|
+|    rvm install 2.1.5 |https://rvm.io/rvm/install |
+
+
 ### Install the gems using the **Gemfile**
 
 ```bash
 gem install bundler
 bundle install
 ```
+| bundler          | Info Link  |
+| ------------- | :-----|
+|   Gemfile |https://bundler.io/gemfile.html |
 
 ### Set up the .env file
 ```bash
