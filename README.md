@@ -1,7 +1,6 @@
 # issuehub.io
 
 [![Build Status](https://travis-ci.org/despo/issuehub.io.svg?branch=master)](https://travis-ci.org/despo/issuehub.io)
-[![Dependency Status](https://gemnasium.com/despo/kobol.png)](https://gemnasium.com/despo/issuehub.io)
 
 [**issuehub.io**](http://issuehub.io) is a small project that enables you to find GitHub issues to work on. Unlike other contributing projects, the focus is on labelled issues rather than projects.
 
@@ -12,12 +11,12 @@ The reason for making this project is to encourage issue labelling on open sourc
 ### Install ruby
 
  ```bash
- rvm install 2.1.5
+ rvm install 2.5.1
  ```
 
 | Install          | Link  |
 | ------------- | :-----|
-|    rvm install 2.1.5 |https://rvm.io/rvm/install |
+|    rvm install 2.5.1 |https://rvm.io/rvm/install |
 
 
 ### Install the gems using the **Gemfile**
