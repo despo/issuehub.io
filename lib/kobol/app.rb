@@ -37,6 +37,10 @@ module Kobol
       erb :label_guide
     end
 
+    get '/privacy-policy' do
+      erb :privacy_policy
+    end
+
     post '/labels' do
       repository = params[:project]
       create_or_update_labels(repository)

@@ -146,8 +146,12 @@ ul.labels li {
   border-radius: 5px;
 }
 
-#label-guide {
+#label-guide, #privacy-policy {
   margin-top: 20px;
+}
+
+#privacy-policy {
+  margin-bottom: 20px;
 }
 
 #label-guide .label {
@@ -196,6 +200,10 @@ footer {
   padding: 10px;
   box-shadow: 0 0px 2px #b2b2b2;
   border-top: 1px solid #b2b2b2;
+}
+
+.footer-links {
+  font-size: 1em;
 }
 
 .button.search {
