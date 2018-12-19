@@ -8,6 +8,9 @@
         <input type="checkbox"  name="label[]" id="help-wanted" value="help wanted" <%= is_selected?("help wanted") %>/>
         <label class="label help-wanted" for="help-wanted">help wanted </label>
 
+        <input type="checkbox"  name="label[]" id="up-for-grabs" value="up-for-grabs" <%= is_selected?("up-for-grabs") %>/>
+        <label class="label up-for-grabs" for="up-for-grabs">up-for-grabs</label>
+
         <input type="checkbox"  name="label[]" id="bug" value="bug" <%= is_selected?("bug") %>/>
         <label class="label bug" for="bug">bug </label>
 
@@ -26,6 +29,9 @@
         <input type="checkbox"  name="label[]" id="html" value="html" <%= is_selected?("html") %>/>
         <label class="label html" for="html">html</label>
 
+        <input type="checkbox"  name="label[]" id="css" value="css" <%= is_selected?("css") %>/>
+        <label class="label css" for="css">css</label>
+
         <input type="checkbox"  name="label[]" id="enhancement" value="enhancement" <%= is_selected?("enhancement") %>/>
         <label class="label enhancement" for="enhancement">enhancement</label>
 
@@ -34,6 +40,9 @@
 
         <input type="checkbox"  name="label[]" id="refactoring" value="refactoring" <%= is_selected?("refactoring") %>/>
         <label class="label refactoring" for="refactoring">refactoring</label>
+
+        <input type="checkbox"  name="label[]" id="optimization" value="optimization" <%= is_selected?("optimization") %>/>
+        <label class="label optimization" for="optimization">optimization</label>
 
         <input type="checkbox"  name="label[]" id="translation" value="translation" <%= is_selected?("translation") %>/>
         <label class="label translation" for="translation">translation</label>
@@ -49,6 +58,14 @@
 
         <input type="checkbox"  name="label[]" id="good-first-issue" value="good first issue" <%= is_selected?("good first issue") %>/>
         <label class="label good-first-issue" for="good-first-issue">good first issue</label>
+
+        <input type="checkbox"  name="label[]" id="first-timers-only" value="first-timers-only" <%= is_selected?("first-timers-only") %>/>
+        <label class="label first-timers-only" for="first-timers-only">first-timers-only</label>
+
+        <input type="checkbox"  name="label[]" id="hacktoberfest" value="hacktoberfest" <%= is_selected?("hacktoberfest") %>/>
+        <label class="label hacktoberfest" for="hacktoberfest">hacktoberfest</label>
+
+
 
         <br/>
         <a target="_blank" href="http://github.com/despo/kobol/issues/new?title=Label suggestion">Suggest a label!</a>
