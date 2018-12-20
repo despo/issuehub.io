@@ -5,7 +5,7 @@ module Kobol::Requests
     def search(properties, page)
       updated_after_date = Date.today << 3
 
-      set_response(client.search_issues("#{search_params(properties)} type:issue state:open updated:>#{updated_after_date}", page: page, per_page: 100))
+      set_response(client.search_issues("#{search_params(properties)} type:issue archived:false state:open updated:>#{updated_after_date}", page: page, per_page: 100))
     end
 
     def total
