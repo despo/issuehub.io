@@ -7,7 +7,7 @@
 The reason for making this project is to encourage issue labelling on open source projects, so that people with different types of experience and knowledge levels can easily find something to help out with.
 
 ## Getting started
-
+here is the commit
 ### Install ruby
 
  ```bash
