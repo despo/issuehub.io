@@ -1,4 +1,4 @@
-# issuehub.io
+#### issuehub.io
 
 [![Build Status](https://travis-ci.org/despo/issuehub.io.svg?branch=master)](https://travis-ci.org/despo/issuehub.io)
 
@@ -6,9 +6,9 @@
 
 The reason for making this project is to encourage issue labelling on open source projects, so that people with different types of experience and knowledge levels can easily find something to help out with.
 
-## Getting started
+##### Getting started
 
-### Install ruby
+####3 Install ruby
 
  ```bash
  rvm install 2.5.1
@@ -19,7 +19,7 @@ The reason for making this project is to encourage issue labelling on open sourc
 |    rvm install 2.5.1 |https://rvm.io/rvm/install |
 
 
-### Install the gems using the **Gemfile**
+#### Install the gems using the **Gemfile**
 
 ```bash
 gem install bundler
@@ -29,24 +29,24 @@ bundle install
 | ------------- | :-----|
 |   Gemfile |https://bundler.io/gemfile.html |
 
-### Set up the .env file
+##### Set up the .env file
 ```bash
 cp .env.example .env
 ```
 
-### Make sure the tests are passing
+##### Make sure the tests are passing
 
 ```bash
 bundle exec rake spec
 ```
 
-### Run the app!
+##### Run the app in your pc
 
 ```bash
 bundle exec rackup
 ```
 
-## Contributing
+#### Contributing
 
 Find something to work on. You can pick one of the open issues, if there are any, fix a bug, improve the interface, refactor the code or improve test coverage!
 
@@ -54,6 +54,6 @@ If there is something else that you would like to work on or other ways to impro
 
 Also, have a look at the [contribution guidelines](https://github.com/despo/issuehub.io/blob/master/CONTRIBUTING.md).
 
-## Copyright
+#### Copyright
 
 Copyright (c) 2013-2018 Despo Pentara. See [LICENSE](https://github.com/despo/kobol/blob/master/LICENSE) for details.
