@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mathparse
+Version: 0.1.2
+Summary: 
+
+mathparse is a library for solving mathematical equations contained in strings
+
+Home-page: https://github.com/gunthercox/mathparse
+Author: Gunther Cox
+Author-email: gunthercx@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: mathparse
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Programming Language :: Python
