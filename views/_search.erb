@@ -2,7 +2,7 @@
   <div class="large-12 large-centered columns">
     <form action="/" method="get">
       <div class="large-1 columns description labels">
-        labels
+        <div style="letter-spacing: 1px;">Labels</div>
       </div>
       <div class="large-5 columns checkboxes">
         <input type="checkbox"  name="label[]" id="help-wanted" value="help wanted" <%= is_selected?("help wanted") %>/>
@@ -68,10 +68,13 @@
 
 
         <br/>
+        <br/>
         <a target="_blank" href="http://github.com/despo/kobol/issues/new?title=Label suggestion">Suggest a label!</a>
+        <br/>
       </div>
+      
       <div class="large-2 columns description languages">
-        language
+        <div style="letter-spacing: 1px;>Language</div>
       </div>
       <div class="large-3 columns">
         <input type="text" name="language" placeholder="ruby, javascript, ..." id="language" value="<%=params["language"] %>" />
