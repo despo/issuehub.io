@@ -48,7 +48,7 @@ bundle exec rackup
 
 ## Contributing
 
-Find something to work on. You can pick one of the open issues, if there are any, fix a bug, improve the interface, refactor the code or improve test coverage!
+Find something to work on. You can pick one of the open issues, if there are any, fix the bugs to the best of your ability, improve the interface, refactor the code! Otherwise, you can always improve test coverage!
 
 If there is something else that you would like to work on or other ways to improve **issuehub**, open an issue first so we can discuss it.
 
