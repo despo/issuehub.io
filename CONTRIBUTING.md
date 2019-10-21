@@ -14,5 +14,5 @@ Syntax:
 * no trailing whitespace. Blank lines should not have any space.
 * my_method(my_arg) or my_method arguments but definitely not my_method( my_arg )
 * a = b and not a=b.
-* aim for 1.9 hash syntax - `{ dog: "Akira" }` rather than `{ :dog => "Akira" }`
+* aim for 1.9 hash syntax - `{ cat: "Akira" }` rather than `{ :cat => "Akira" }`
 * follow the conventions you see used in the source already.
