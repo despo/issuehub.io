@@ -16,7 +16,7 @@ The reason for making this project is to encourage issue labelling on open sourc
 
 | Install          | Link  |
 | ------------- | :-----|
-|    rvm install 2.5.1 |https://rvm.io/rvm/install |
+|    rvm install 2.5.2 |https://rvm.io/rvm/install |
 
 
 ### Install the gems using the **Gemfile**
