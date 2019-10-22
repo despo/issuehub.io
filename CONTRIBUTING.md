@@ -5,9 +5,8 @@
 1. Fork the repo.
 2. Add a test for your change. Only styling, documentation and refactoring changes (that are already covered by tests) don't require any new tests. If you are adding functionality or fixing a bug, you need a test! Also, no need to test rails!
 3. Make the test pass.
-4. Commit, with a meaningful describing message. This is very important!
-5. Push to your fork and submit a pull request.
-6. Wait for comments or feedback!
+4. Push to your fork and submit a pull request.
+5. Wait for comments or feedback!
 
 Syntax:
 
