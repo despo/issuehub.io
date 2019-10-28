@@ -212,6 +212,12 @@ footer {
   font-size: 1.7em;
   border: 2px outset #2795b6;
 }
+.button.search:hover{
+ 
+  background-color:rgb('2, 95, 122') ;
+
+ 
+}
 
 #search label.label {
   border-radius: 5px;
