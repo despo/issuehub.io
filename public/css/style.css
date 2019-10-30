@@ -214,8 +214,8 @@ footer {
 }
 .button.search:hover{
  
-  background-color:rgb('2, 95, 122') ;
-
+  background-color:rgb('2, 95, 122',0.6) ;
+border: 2px solid white;
  
 }
 
