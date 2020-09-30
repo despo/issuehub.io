@@ -20,7 +20,7 @@ body * {
 }
 
 a {
-  color: #2764B6;
+  color: #0066ff;
 }
 
 header .sign-up a {
@@ -37,7 +37,7 @@ input[type="text"]:focus {
 }
 
 header {
-  border-top: 5px solid #2795b6;
+  border-top: 5px solid #33cccc;
   box-shadow: 2px 2px 2px #d8d2e5;
   padding: 15px;
   color: white;
