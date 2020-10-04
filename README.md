@@ -29,7 +29,7 @@ bundle install
 | ------------- | :-----|
 |   Gemfile |https://bundler.io/gemfile.html |
 
-### Set up the .env file
+### Set up the .env(environment) file
 ```bash
 cp .env.example .env
 ```
