@@ -52,7 +52,7 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (13.0.1)
-    rdiscount (2.2.0.1)
+    rdiscount (2.2.0.2)
     regexp_parser (1.7.1)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
