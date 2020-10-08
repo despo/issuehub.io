@@ -1,335 +1,350 @@
 html {
-  padding: 0;
-  overflow-x: hidden;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
-  line-height: 1.6em;
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+    line-height: 1.6em;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: "Open Sans", helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 body * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
-  color: #2764B6;
+    color: #2764B6;
 }
 
 header .sign-up a {
-  color: #2ba6cb;
+    color: #2ba6cb;
 }
 
-input[type="text"] {
-  height: 2.2em;
-  font-size: 2.5em;
-}
+/* input[type="text"] { */
+/*   height: 2.2em; */
+/*   font-size: 2.5em; */
+/* } */
 
-input[type="text"]:focus {
-  border-color: #2BA6CB;
-}
+/* input[type="text"]:focus { */
+/*   border-color: #2BA6CB; */
+/* } */
 
 header {
-  border-top: 5px solid #2795b6;
-  box-shadow: 2px 2px 2px #d8d2e5;
-  padding: 15px;
-  color: white;
-  background-color: #3b3b3b;
+    border-top: 5px solid #2795b6;
+    box-shadow: 2px 2px 2px #d8d2e5;
+    padding: 15px;
+    color: white;
+    background-color: #3b3b3b;
 }
 
 .brand {
-  display: inline;
-  font-size: 2em;
-  font-weight: 500;
-  text-shadow: rgb(255, 255, 255) 1px 1px 1px;
+    display: inline;
+    font-size: 2em;
+    font-weight: 500;
+    text-shadow: rgb(255, 255, 255) 1px 1px 1px;
 }
 
 .brand a {
-  color: white;
+    color: white;
 }
 
 #issues {
-  padding-top: 10px;
-  background-color: #f6f6f6;
-  min-height: 500px;
-  box-shadow: 0 0px 2px #b2b2b2;
-  border-top: 1px solid #b2b2b2;
+    padding-top: 10px;
+    background-color: #f6f6f6;
+    min-height: 500px;
+    box-shadow: 0 0px 2px #b2b2b2;
+    border-top: 1px solid #b2b2b2;
 }
 
 #issues .empty {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 #issues .message {
-  color: #666666;
-  box-shadow: 2px 2px 2px #e5e5e5;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.5em;
-  background-color: white;
+    color: #666666;
+    box-shadow: 2px 2px 2px #e5e5e5;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: white;
 }
 
 .issue h4 a,.issue h5 {
-  font-weight: bold;
-  overflow-wrap: break-word;
+    font-weight: bold;
+    overflow-wrap: break-word;
 }
 
 article {
-  margin: 10px 0;
-  border-bottom: 1px solid #DDDDDD;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 2px 2px 2px #e9f6fa;
+    margin: 10px 0;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px #e9f6fa;
 }
 
 .body {
-  max-height: 150px;
-  overflow: hidden;
-  transition:  max-height 4s;
-  -moz-transition: max-height 4s;
-  -webkit-transition: max-height 4s;
-  -o-transition: max-height 4s;
-  transition-timing-function: ease-in-out;
+    max-height: 150px;
+    overflow: hidden;
+    transition:  max-height 4s;
+    -moz-transition: max-height 4s;
+    -webkit-transition: max-height 4s;
+    -o-transition: max-height 4s;
+    transition-timing-function: ease-in-out;
 }
 
 .body:hover {
-  max-height: 9999px;
+    max-height: 9999px;
 }
 
 .body h1 {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 .body h2 {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .body h3 {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 .body h1, .body h2, .body h3 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .details {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 ul.labels {
-  text-align: right;
-  list-style-type: none;
-  display: block;
-  padding: 10px 0 0;
-  margin-bottom: 5px;
+    text-align: right;
+    list-style-type: none;
+    display: block;
+    padding: 10px 0 0;
+    margin-bottom: 5px;
 }
 
 ul.labels li {
-  display: inline;
-  margin-right: 5px;
+    display: inline;
+    margin-right: 5px;
 }
 
 #issues .label {
-  bottom: 10px;
+    bottom: 10px;
 }
 
 .label {
-  box-shadow: 1px 1px 2px #e5e5e5;
-  border-radius: 5px;
+    box-shadow: 1px 1px 2px #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #label-guide, #privacy-policy {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 #privacy-policy {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #label-guide .label {
-  margin-bottom: 0;
-}
-
-.row {
-  max-width: 80rem;
+    margin-bottom: 0;
 }
 
 .guide {
-  display: block;
-  box-shadow: 1px 1px 1px 1px #3b3b3b;
-  background-color: #b1272b;
-  background-color: white;
-  top: -10px;
-  position: relative;
-  padding: 10px 10px 7px;
+    display: block;
+    box-shadow: 1px 1px 1px 1px #3b3b3b;
+    background-color: #b1272b;
+    background-color: white;
+    top: -10px;
+    position: relative;
+    padding: 10px 10px 7px;
 }
 
 .guide a {
-  font-size: 1.3em;
-  padding: auto 5px;
-  display: inline-block;
+    font-size: 1.3em;
+    padding: auto 5px;
+    display: inline-block;
 }
 
 .guide a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 code {
-  color: #333333;
-  font-weight: normal;
+    color: #333333;
+    font-weight: normal;
 }
 
 #label-guide ul {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 #label-guide ul li {
-  list-style-type: none;
-  margin: 5px 0;
+    list-style-type: none;
+    margin: 5px 0;
 }
+
+/* footer { */
+/*     padding: 10px; */
+/*     box-shadow: 0 0px 2px #b2b2b2; */
+/*     border-top: 1px solid #b2b2b2; */
+/* } */
+
+/* .footer-links { */
+/*     font-size: 1em; */
+/* } */
 
 footer {
-  padding: 10px;
-  box-shadow: 0 0px 2px #b2b2b2;
-  border-top: 1px solid #b2b2b2;
-}
-
-.footer-links {
-  font-size: 1em;
+    display: flex;
 }
 
 .button.search {
-  color: white;
-  background-color: #2795b6;
-  font-size: 1.7em;
-  border: 2px outset #2795b6;
+    color: white;
+    background-color: #2795b6;
+    font-size: 1.7em;
+    border: 2px outset #2795b6;
 }
 
 #search label.label {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 input[type="checkbox"] + label {
-  font-size: 1.2em;
-  margin: 2px 1px;
-  font-weight: 400;
-  -moz-box-shadow: inset 0 50px 0 #5e5e5e; 
- -webkit-box-shadow: inset 0 50px 0 #5e5e5e;
-    box-shadow: inset 0 50px 0 #5e5e5e;
+    font-size: 1.2em;
+    margin: 2px 1px;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #b2b2b2;
+    transition: 0.3s all;
+}
+
+input[type="checkbox"] + label:hover {
+    color: white;
+    transition: 0.3s background;
+    background-color: #2e5dfe;
 }
 
 input[type="checkbox"] {
-  border: none;
-  visibility: hidden;
-  display: none;
-  margin-bottom: 0;
-  width: 0px;
+    border: none;
+    visibility: hidden;
+    display: none;
+    margin-bottom: 0;
+    width: 0px;
+}
+
+label:hover {
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label {
-  opacity: 1;
-  font-weight: 400;
--webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    opacity: 1;
+    font-weight: 400;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    background-color: #2e8dfe;
+    color: white;
+    border: 1px solid #2e8dfe;
+    transition: 0.3s all;
 }
 
 .label.help-wanted {
-  background-color: #128014;
+    background-color: #128014;
 }
 
 .label.documentation {
-  background-color: #996588;
+    background-color: #996588;
 }
 
 .label.bug {
-  background-color: #e70b41;
+    background-color: #e70b41;
 }
 
 .label.trivial {
-  background-color: #136480;
+    background-color: #136480;
 }
 
 .label.feature {
-  background-color: #35563a;
+    background-color: #35563a;
 }
 
 .label.enhancement {
-  background-color: #537699;
+    background-color: #537699;
 }
 
 .label.design {
-  background-color: #1f5466;
+    background-color: #1f5466;
 }
 
 .label.refactoring {
-  background-color: #686180;
+    background-color: #686180;
 }
 
 .label.tests {
-  background-color: #b34f2e;
+    background-color: #b34f2e;
 }
 
 .label.html {
-  background-color: #d918a9;
+    background-color: #d918a9;
 }
 
 .label.translation {
-  background-color: #208050;
+    background-color: #208050;
 }
 
 .label.beginner {
-  background-color: #66410a;
+    background-color: #66410a;
 }
 
 .label.accessibility {
-  background-color: #30803c;
+    background-color: #30803c;
 }
 
 .label.easy-pick {
-  background-color: #b3560b;
+    background-color: #b3560b;
 }
 
 .description {
-  text-align: right;
-  font-weight: bold;
-  font-size: 1.5em;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .description.languages, .description.labels {
-  padding-top: 25px;
-  padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .pagination {
-  padding: 5px 10px 5px;
+    padding: 5px 10px 5px;
 }
 
 .sign-up {
-  text-align: right;
+    text-align: right;
 }
 
 .labelling {
-  background-color: #3b3b3b;
-  padding-top: 30px;
+    background-color: #3b3b3b;
+    padding-top: 30px;
 }
 
 .log-in-message {
-  padding-bottom: 10px;
-  color: white;
+    padding-bottom: 10px;
+    color: white;
 }
 
 .labelling .message {
-  padding-top: 15px;
-  color: white;
+    padding-top: 15px;
+    color: white;
 }
 
 
@@ -337,163 +352,235 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
 
 /* Left will inherit from right (so we don't need to duplicate code) */
 .github-fork-ribbon {
-  /* The right and left classes determine the side we attach our banner to */
-  position: absolute;
+    /* The right and left classes determine the side we attach our banner to */
+    position: absolute;
 
-  /* Add a bit of padding to give some substance outside the "stitching" */
-  padding: 2px 0;
+    /* Add a bit of padding to give some substance outside the "stitching" */
+    padding: 2px 0;
 
-  /* Set the base colour */
-  background-color: #b1224c;
+    /* Set the base colour */
+    background-color: #b1224c;
 
-  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
 
-  /* Add a drop shadow */
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    /* Add a drop shadow */
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
 
-  z-index: 9999;
-  pointer-events: auto;
+    z-index: 9999;
+    pointer-events: auto;
 }
 
 .github-fork-ribbon a,
 .github-fork-ribbon a:hover {
-  /* Set the font */
-  font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
+    /* Set the font */
+    font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
 
-  /* Set the text properties */
-  text-decoration: none;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
-  text-align: center;
+    /* Set the text properties */
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    text-align: center;
 
-  /* Set the geometry. If you fiddle with these you'll also need
-     to tweak the top and right values in .github-fork-ribbon. */
-  width: 200px;
-  line-height: 20px;
+    /* Set the geometry. If you fiddle with these you'll also need
+    to tweak the top and right values in .github-fork-ribbon. */
+    width: 200px;
+    line-height: 20px;
 
-  /* Set the layout properties */
-  display: inline-block;
-  padding: 2px 0;
+    /* Set the layout properties */
+    display: inline-block;
+    padding: 2px 0;
 
-  /* Add "stitching" effect */
-  border-width: 1px 0;
-  border-style: dotted;
-  border-color: #fff;
-  border-color: rgba(255, 255, 255, 0.7);
+    /* Add "stitching" effect */
+    border-width: 1px 0;
+    border-style: dotted;
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 .github-fork-ribbon-wrapper {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  z-index: 9999;
-  pointer-events: none;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    z-index: 9999;
+    pointer-events: none;
 }
 
 .github-fork-ribbon-wrapper.fixed {
-  position: fixed;
+    position: fixed;
 }
 
 .github-fork-ribbon-wrapper.left {
-  left: 0;
+    left: 0;
 }
 
 .github-fork-ribbon-wrapper.right {
-  right: 0;
+    right: 0;
 }
 
 .github-fork-ribbon-wrapper.left-bottom {
-  position: fixed;
-  top: inherit;
-  bottom: 0;
-  left: 0;
+    position: fixed;
+    top: inherit;
+    bottom: 0;
+    left: 0;
 }
 
 .github-fork-ribbon-wrapper.right-bottom {
-  position: fixed;
-  top: inherit;
-  bottom: 0;
-  right: 0;
+    position: fixed;
+    top: inherit;
+    bottom: 0;
+    right: 0;
 }
 
 .github-fork-ribbon-wrapper.right .github-fork-ribbon {
-  top: 42px;
-  right: -43px;
+    top: 42px;
+    right: -43px;
 
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .github-fork-ribbon-wrapper.left .github-fork-ribbon {
-  top: 42px;
-  left: -43px;
+    top: 42px;
+    left: -43px;
 
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 
 .github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
-  top: 80px;
-  left: -43px;
+    top: 80px;
+    left: -43px;
 
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {
-  top: 80px;
-  right: -43px;
+    top: 80px;
+    right: -43px;
 
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 @media only screen and (max-width: 92em) {
-  .sign-up {
-    padding-right: 50px;
-  }
+    .sign-up {
+        padding-right: 50px;
+    }
 }
 
 @media only screen and (max-width: 88em) {
-  .sign-up {
-    padding-right: 100px;
-  }
+    .sign-up {
+        padding-right: 100px;
+    }
 }
 
 @media only screen and (max-width: 85em) {
-  .sign-up {
-    padding-right: 130px;
-  }
+    .sign-up {
+        padding-right: 130px;
+    }
 }
 
 @media only screen and (max-width: 73em) {
-  .show-for-medium-up {
-    display: block;
-  }
+    .show-for-medium-up {
+        display: block;
+    }
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.submit-button {
+    display: flex;
+    border-radius: 5px;
+    background-color: #2e8dfe;
+    border: none;
+    color: white;
+    height: 100%;
+    width: 150px;
+    padding: 15px;
+    margin-left: 15px;
+    transition: 0.3s all;
+    font-weight: 400;
+}
+
+.submit-button:hover {
+    transition: 0.3s all;
+    cursor: pointer;
+    background-color: #2e5dfe;
+}
+
+.query {
+    display: flex;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    border: 2px solid #c0c0c0;
+    background-color: #f0f0f0;
+    padding: 7px;
+    padding-left: 15px;
+    transition: 0.3s all;
+}
+
+.query:focus {
+    border: 2px solid #2e8dfe;
+    transition: 0.3s all;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.row {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.tag {
+    display: flex;
+    flex-basis: 10%;
+}
+
+.cut {
+    padding-right: 165px;
 }
 
 /****** temp overrides of font-family in foundation.css ******/
 .label, .button{font-family:"Open Sans", "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+

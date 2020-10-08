@@ -1,12 +1,5 @@
 <%= erb :_search %>
 <div id="issues">
-  <div class="guide">
-    <div class="row">
-      <div class="large-12 columns">
-      <a href="/label-guide">Read the label Guide</a>
-    </div>
-    </div>
-  </div>
   <div class="row">
     <% if @issues.any? %>
       <%= erb :_pagination %>

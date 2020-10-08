@@ -28,8 +28,30 @@ module Kobol
     set :views, APP_ROOT + "/views"
 
     get '/' do
+      @tags = [
+        'help-wanted',
+        'up-for-grabs',
+        'bug',
+        'documentation',
+        'trivial',
+        'feature',
+        'tests',
+        'html',
+        'css',
+        'enhancement',
+        'design',
+        'refactoring',
+        'optimization',
+        'translation',
+        'beginner',
+        'accessibility',
+        'easy pick',
+        'good first issue',
+        'first-timers-only',
+        'hacktoberfest',
+        'security'
+      ]
       retrieve_issues(page)
-
       erb :issues
     end
 

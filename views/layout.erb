@@ -7,9 +7,9 @@
 
     <title>issuehub.io</title>
 
+    <%# <link type="text/css" rel="stylesheet" href="<%= url("css/foundation.min.css") %1>" /> %>
     <link rel="icon" type="image/x-icon" href="<%= url("images/favicon.png") %>" />
     <link type="text/css" rel="stylesheet" href="<%= url("css/github.css") %>" />
-    <link type="text/css" rel="stylesheet" href="<%= url("css/foundation.min.css") %>" />
     <link type="text/css" rel="stylesheet" href="<%= url("css/style.css") %>" />
     <link type="text/css" rel="stylesheet" href="<%= url("css/style-small.css") %>" />
     <script type="text/javascript" src="<%= url("js/jquery.js") %>"></script>
@@ -23,42 +23,37 @@
     </script>
   </head>
   <body>
-    <header>
-    <div class="row">
-      <div class="large-6 columns">
-        <div class="brand"><a href="/">issuehub.io</a></div>
-        <span class="show-for-medium-up">Contribute to Open Source. Search issue labels to find the right project for you!</span>
-      </div>
-      <div class="large-6 columns sign-up">
-        <% unless current_user %>
-          <a href="/auth/github?scope=public_repo,repo">Login with Github</a>
-        <% else %>
-          Logged in: <a href="http://github.com/<%= nickname %>"><%= nickname %> </a> / <a href="/logout">Logout</a>
-        <% end %>
-      </div>
-    </div>
-    </header>
+    <%# <header> %>
+    <%# <div class="row"> %>
+    <%#   <div class="large-6 columns"> %>
+    <%#     <div class="brand"><a href="/">issuehub.io</a></div> %>
+    <%#     <span class="show-for-medium-up">Contribute to Open Source. Search issue labels to find the right project for you!</span> %>
+    <%#   </div> %>
+    <%#   <div class="large-6 columns sign-up"> %>
+    <%#     <% unless current_user %1> %>
+    <%#       <a href="/auth/github?scope=public_repo,repo">Login with Github</a> %>
+    <%#     <% else %1> %>
+    <%#       Logged in: <a href="http://github.com/<%= nickname %1>"><%= nickname %1> </a> / <a href="/logout">Logout</a> %>
+    <%#     <% end %1> %>
+    <%#   </div> %>
+    <%# </div> %>
+    <%# </header> %>
     <div id="container">
       <%= yield %>
     </div>
     <script type="text/javascript" src="<%= url("js/analytics.js") %>"></script>
   </body>
   <footer>
-  <div class="row">
-    <div class="large-6 columns">
-      <ul class='inline-list footer-links'>
-        <li>Copyright 2013-<%= Date.today.year %></li>
-        <li><a href='/privacy-policy'>Privacy Policy</a></li>
-      </ul>
-    </div>
-    <div class="large-6 columns text-right">
-      by <a href="http://github.com/despo">despo</a>
-    </div>
-  </div>
+  <%# <div class="row"> %>
+  <%#   <div class="large-6 columns"> %>
+  <%#     <ul class='inline-list footer-links'> %>
+  <%#       <li>Copyright 2013-<%= Date.today.year %1></li> %>
+  <%#       <li><a href='/privacy-policy'>Privacy Policy</a></li> %>
+  <%#     </ul> %>
+  <%#   </div> %>
+  <%#   <div class="large-6 columns text-right"> %>
+  <%#     by <a href="http://github.com/despo">despo</a> %>
+  <%#   </div> %>
+  <%# </div> %>
   </footer>
-  <div class="github-fork-ribbon-wrapper right">
-    <div class="github-fork-ribbon">
-      <a href="https://github.com/despo/issuehub.io">Fork me on GitHub</a>
-    </div>
-  </div>
 </html>
