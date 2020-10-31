@@ -738,7 +738,7 @@ jQuery.extend({
   },
 
   // Multifunctional method to get and set values of a collection
-  // The value/s can optionally be executed if it's a function
+  // The value/s can optionally be executed if it is a function
   access: function( elems, fn, key, value, chainable, emptyGet, raw ) {
     var i = 0,
       length = elems.length,
@@ -814,7 +814,7 @@ jQuery.extend({
 
     return ret;
   }
-});
+}); //to prevent the jQuery code from running before the document is finished loading (is ready).
 
 jQuery.ready.promise = function( obj ) {
   if ( !readyList ) {
@@ -1086,7 +1086,7 @@ function Sizzle( selector, context, results, seed ) {
             return results;
           }
         } else {
-          // Context is not a document
+          // Context is not a Document
           if ( context.ownerDocument && (elem = context.ownerDocument.getElementById( m )) &&
             contains( context, elem ) && elem.id === m ) {
             results.push( elem );
@@ -1517,7 +1517,7 @@ setDocument = Sizzle.setDocument = function( node ) {
       support.disconnectedMatch = matches.call( div, "div" );
 
       // This should fail with an exception
-      // Gecko does not error, returns false instead
+      // Gecko does not return error, returns false instead
       matches.call( div, "[s!='']:x" );
       rbuggyMatches.push( "!=", pseudos );
     });
@@ -1691,7 +1691,7 @@ Sizzle.contains = function( context, elem ) {
 };
 
 Sizzle.attr = function( elem, name ) {
-  // Set document vars if needed
+  // Set document vars (if needed)
   if ( ( elem.ownerDocument || elem ) !== document ) {
     setDocument( elem );
   }
