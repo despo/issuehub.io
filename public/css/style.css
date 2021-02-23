@@ -1,5 +1,5 @@
 html {
-  padding: 0;
+  padding: 1;
   overflow-x: hidden;
 }
 
@@ -9,7 +9,7 @@ body {
   margin: 0;
   background-color: #fff;
   font-family: "Open Sans", helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -20,7 +20,7 @@ body * {
 }
 
 a {
-  color: #2764B6;
+  color: #2768B6;
 }
 
 header .sign-up a {
@@ -105,7 +105,7 @@ article {
 }
 
 .body h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .body h2 {
