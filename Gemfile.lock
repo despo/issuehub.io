@@ -15,7 +15,7 @@ GEM
     dotenv (2.7.6)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
-    github-markup (3.0.5)
+    github-markup (4.0.0)
     hashie (4.1.0)
     jwt (2.2.1)
     mini_mime (1.0.2)
