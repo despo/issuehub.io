@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: octokit
+    versions:
+    - 4.20.0
+  - dependency-name: capybara
+    versions:
+    - 3.35.1
