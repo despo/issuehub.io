@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     capybara (3.33.0)
       addressable
@@ -46,7 +46,7 @@ GEM
     omniauth-oauth2 (1.6.0)
       oauth2 (~> 1.1)
       omniauth (~> 1.9)
-    public_suffix (4.0.5)
+    public_suffix (4.0.6)
     racc (1.5.2)
     rack (2.2.3)
     rack-protection (2.0.8.1)
