@@ -20,11 +20,11 @@ body * {
 }
 
 a {
-  color: #2764B6;
+  color: #051730;
 }
 
 header .sign-up a {
-  color: #2ba6cb;
+  color: #c373d1;
 }
 
 input[type="text"] {
@@ -33,7 +33,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #2BA6CB;
+  border-color: #43b0a0;
 }
 
 header {
@@ -41,7 +41,7 @@ header {
   box-shadow: 2px 2px 2px #d8d2e5;
   padding: 15px;
   color: white;
-  background-color: #3b3b3b;
+  background-color: #436650;
 }
 
 .brand {
@@ -57,7 +57,7 @@ header {
 
 #issues {
   padding-top: 10px;
-  background-color: #f6f6f6;
+  background-color: #94c48d;
   min-height: 500px;
   box-shadow: 0 0px 2px #b2b2b2;
   border-top: 1px solid #b2b2b2;
