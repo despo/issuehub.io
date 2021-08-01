@@ -13,6 +13,6 @@ Syntax:
 
 * no trailing whitespace. Blank lines should not have any space.
 * my_method(my_arg) or my_method arguments but definitely not my_method( my_arg )
-* a = b and not a=b.
+* a = b and not a=b.(space has to be there between the letters and the sign as shown)
 * aim for 1.9 hash syntax - `{ dog: "Akira" }` rather than `{ :dog => "Akira" }`
-* follow the conventions you see used in the source already.
+* follow the conventions and instructions you see used in the source already.
