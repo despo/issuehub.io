@@ -8,7 +8,7 @@ The reason for making this project is to encourage issue labelling on open sourc
 
 ## Getting started
 
-### Install ruby
+### 1.Install ruby
 
  ```bash
  rvm install 2.5.1
@@ -19,7 +19,7 @@ The reason for making this project is to encourage issue labelling on open sourc
 |    rvm install 2.5.1 |https://rvm.io/rvm/install |
 
 
-### Install the gems using the **Gemfile**
+### 2.Install the gems using the **Gemfile**
 
 ```bash
 gem install bundler
@@ -29,18 +29,18 @@ bundle install
 | ------------- | :-----|
 |   Gemfile |https://bundler.io/gemfile.html |
 
-### Set up the .env file
+### 3.Set up the .env file
 ```bash
 cp .env.example .env
 ```
 
-### Make sure the tests are passing
+### 4.Make sure the tests are passing
 
 ```bash
 bundle exec rake spec
 ```
 
-### Run the app!
+### 5.Run the app!
 
 ```bash
 bundle exec rackup
